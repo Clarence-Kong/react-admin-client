@@ -1,0 +1,57 @@
+.topHeader {
+  height: 80px;
+  background-color: #fff;
+
+
+  .up {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 25px;
+    border-bottom: 1px solid #497568;
+
+    span {
+      padding-right: 20px;
+    }
+
+    text-align: right;
+  }
+
+  .down {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 25px;
+
+    .left-title {
+      //flex-grow: 1;
+      position: relative;
+
+      h1 {
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -100%;
+        transform: translate(-50%, 0);
+        border-top: 26px solid #ffffff;
+        border-right: 19px solid transparent;
+        border-bottom: 22px solid transparent;
+        border-left: 19px solid transparent;
+      }
+    }
+    .right-info {
+      line-height: 40px;
+      img {
+        width: 25px;
+        margin:0 10px 5px 10px;
+
+      }
+    }
+  }
+}
